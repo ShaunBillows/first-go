@@ -6,7 +6,7 @@ import (
 
     "github.com/labstack/echo/v4"
     
-    "api-go/models"
+    "api-go/internal/models"
 )
 
 type QuestionFetcher func(*sql.DB) (models.Question, error)

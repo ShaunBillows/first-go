@@ -4,12 +4,12 @@ import (
     "database/sql"
     "fmt"
     
-	"api-go/models"
+	"api-go/internal/models"
 )
 
-func GetGoQuestion(db *sql.DB) (models.Question, error) {
+func GetSQLQuestion(db *sql.DB) (models.Question, error) {
     question := models.Question{}
-    query := `SELECT id, topic, question, answer FROM questions WHERE topic = "go" ORDER BY RAND() LIMIT 1`
+    query := `SELECT id, topic, question, answer FROM questions WHERE topic = "sql" ORDER BY RAND() LIMIT 1`
 
     row := db.QueryRow(query)
     err := row.Scan(&question.ID, &question.Topic, &question.Ques, &question.Ans)

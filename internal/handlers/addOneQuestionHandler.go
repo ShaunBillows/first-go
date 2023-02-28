@@ -6,7 +6,7 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"api-go/models"
+	"api-go/internal/models"
 )
 
 func AddOneQuestionHandler(addQuestionFunc func(*sql.DB, models.Question) error, db *sql.DB) echo.HandlerFunc {

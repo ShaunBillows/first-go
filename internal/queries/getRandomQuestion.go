@@ -4,7 +4,7 @@ import (
     "database/sql"
     "fmt"
     
-	"api-go/models"
+	"api-go/internal/models"
 )
 
 func GetRandomQuestion(db *sql.DB) (models.Question, error) {

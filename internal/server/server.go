@@ -5,9 +5,9 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"api-go/handlers"
-	"api-go/queries"
-	"api-go/db"
+	"api-go/internal/handlers"
+	"api-go/internal/queries"
+	"api-go/internal/db"
 )
 
 func Start() {

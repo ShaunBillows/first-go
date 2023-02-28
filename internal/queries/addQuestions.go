@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	
-	"api-go/models"
+	"api-go/internal/models"
 )
 
 func AddQuestions(db *sql.DB, questions []models.Question) error {

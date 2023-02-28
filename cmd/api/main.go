@@ -1,7 +1,7 @@
 package main
 
 import (
-	"api-go/server"
+	"api-go/internal/server"
 )
 
 func main() {
